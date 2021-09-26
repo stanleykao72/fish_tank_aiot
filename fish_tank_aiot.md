@@ -7,9 +7,10 @@
 使用Open Source的Home Assistant，目前Home Assistant廣泛運用在智慧家庭，用以整合小米、Apple、Google、Yeelight、IKEA、Philips 等廠商推出的智慧居家產品，像是喇叭、插座、電子鎖、電燈、各式感應器等連網設備。此外，也可以整合ESPHome及MQTT的感測器，由於架構完整且有充分的彈性，所以選擇Home Assistant為IoT平台
 
 > * Home Assistant Dashboard
->
-> <img align="left" src="./light/Dashboard.png" alt="Dashboard" width="600"/>
->
+> 
+> <img src="./light/Dashboard.png" alt="Dashboard" width="600"/>
+
+
 
 
 ### 二、水草燈: 
@@ -34,22 +35,22 @@
 
 在 Node Red 的 [Spline Curve](https://flows.nodered.org/node/node-red-contrib-spline-curve)可自行規劃亮度曲線(X軸代表時間，Y軸代表亮度)，控制白光的目的在於的顯色較佳，較有觀賞價值。如圖所示，每個階段調高亮度 25%
 
-><img align="left" src="./light/Sunset.png" alt="Sunset" width="150"/><img align="left" src="./light/Evening.png" alt="Evening" width="150"/><img align="left" src="./light/Night.png" alt="Night" width="150"/>
->
+><img src="./light/Sunset.png" alt="Sunset" width="150"/><img src="./light/Evening.png" alt="Evening" width="150"/><img src="./light/Night.png" alt="Night" width="150"/>
+
 
 下圖是在Home Assistant中，36小時中白光燈光調整的線條圖
 
-> <img align="left" src="./light/White.png" alt="White" width="400"/>
+> <img src="./light/White.png" alt="White" width="400"/>
 >
 
 控制RGB燈光(紅、綠、藍光)，只開紅光及藍光，綠光永遠關閉；植物行光合作用只需要紅光及藍光，所以，只調整紅藍光的亮度。如圖所示，第一階段即調高亮度至 50% ，其餘兩階沒各再調高亮度 25%
 
-> <img align="left" src="./light/Sunset_RGB.png" alt="Sunset RGB" width="150"/><img align="left" src="./light/Evening_RGB.png" alt="Evening RGB" width="150"/><img align="left" src="./light/Night_RGB.png" alt="Night RGB" width="150"/>
+> <img src="./light/Sunset_RGB.png" alt="Sunset RGB" width="150"/><img align="left" src="./light/Evening_RGB.png" alt="Evening RGB" width="150"/><img align="left" src="./light/Night_RGB.png" alt="Night RGB" width="150"/>
 >
 
 如下圖形是在Home Assistant中，36小時中紅藍光燈光調整的線條圖
 
-> <img align="left" src="./light/Brightness.png" alt="Brightness" width="400"/>
+> <img src="./light/Brightness.png" alt="Brightness" width="400"/>
 >
 
 
@@ -67,27 +68,27 @@
 * [Gravity: Analog pH Sensor/Meter Kit V2](https://www.dfrobot.com/product-1782.html): 1組
 * [Gravity: Analog TDS Sensor/Meter for Arduino](https://www.dfrobot.com/product-1662.html): 1組
 
-><img align="left" src="./sensor/sensor and fan control1.jpeg" alt="control1" width="200"/> <img align="left" src="./sensor/ESP8266 and Arduino.jpeg" alt="Esp8266 and Arduino" width="200"/> <img align="left" src="./sensor/L298n.jpeg" alt="L298n" width="200"/>
->
+><img src="./sensor/sensor and fan control1.jpeg" alt="control1" width="200"/> <img src="./sensor/ESP8266 and Arduino.jpeg" alt="Esp8266 and Arduino" width="200"/> <img src="./sensor/L298n.jpeg" alt="L298n" width="200"/>
+
 
 * pH: pH 值在觀察後大約在 6.3~6.9 之間。在開燈後，因水草行光合做用吸收 CO2，讓 pH 由最低一路往上昇到燈亮度最高的時該；關燈後，由於 CO2 持續打，pH 值會從最高點持續降到開燈前的最低點(大約 6.3 左右)。
  
 > * [深入分析氨~銨~PH~硝化菌他們之間的關聯](https://www.youtube.com/watch?v=ZkAH9GeI50c&t=413s)
 
-> <img align="left" src="./sensor/pH Sensor.png" alt="pH Sensor" width="300"/>
->
+> <img src="./sensor/pH Sensor.png" alt="pH Sensor" width="300"/>
+
 
 * TDS: [TDS](https://www.ec-ff.com/blog/posts/fancy-water-what-is-tds)(Total Dissolved Solids)是溶解性總固體值，「溶解固體」是指溶解於水中的任何礦物質，鹽、金屬、陽離子或陰離子。而溶解性總固體值包含鈣、鎂、鉀、鈉等無機鹽，和少量溶於水的有機物。在水草缸中 TDS 可以用來檢視在水體中添加的液肥或餵食魚隻的餌料是否超標；當 TDS 過高(250 或 300 ppm)時會影響水草對養分的吸收，水草長得好與壞 TDS 是關鍵指標。
 
 > * [當你不知道哪時候該換水 可以參考看看水中的TDS數](https://www.youtube.com/watch?v=Fvwlbusd24I)
 
-> <img align="left" src="./sensor/TDS Sensor.png" alt="TDS Sensor" width="300"/>
->
+> <img src="./sensor/TDS Sensor.png" alt="TDS Sensor" width="300"/>
+
 
 * 溫度: 溫度感測試共有四處，水草缸、Led燈、Led燈的兩個變壓器上，Led燈及Led燈變壓器的溫度皆利用風扇的風量大小，來達到降溫，在開燈的情況下，一般多可控制在 40C 以下。水草缸的溫度，也提供給 pH/TDS 感測器進行溫度補償。
 
-> <img align="left" src="./sensor/Temp Sensor.png" alt="Temp Sensor" width="300"/>
->
+> <img src="./sensor/Temp Sensor.png" alt="Temp Sensor" width="300"/>
+
 
 
 ### 四、控制與自動化:
@@ -101,8 +102,8 @@
 * L298n: 3片
 * 蠕動泵: 5個
 * 降壓模組 LM2596S: 1片 
-> <img align="left" src="./sensor/water pump.jpeg" alt="L298n" width="400"/>
->
+> <img src="./sensor/water pump.jpeg" alt="L298n" width="400"/>
+
 
 * 液肥: 液肥有添加微量元素及鐵肥。微量元素先控制每天在晚上 7:00~8:00 之間，現在設定為 每日添加上限為 1cc；鐵肥則控制在晚上 12:00 關燈後添加，也是每日設定上限為 1cc。同時也留下可以調整每日添加量的接口(interface)，可以 Home Assistant 中設定上限值，之後進行 AI 的訓練後推論 (Inference)，也預計填入該接口。
 
