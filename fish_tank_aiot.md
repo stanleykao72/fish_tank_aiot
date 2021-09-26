@@ -37,9 +37,11 @@
 
 在 Node Red 的 [Spline Curve](https://flows.nodered.org/node/node-red-contrib-spline-curve)可自行規劃亮度曲線(X軸代表時間，Y軸代表亮度)，控制白光的目的在於的顯色較佳，較有觀賞價值。如圖所示，每個階段調高亮度 25%
 
+<div>
 <center>
     <img src="./light/Sunset.png" alt="Sunset" width="150"/><img src="./light/Evening.png" alt="Evening" width="150"/><img src="./light/Night.png" alt="Night" width="150"/>
 </center>
+</div>
 
 下圖是在Home Assistant中，36小時中白光燈光調整的線條圖
 
