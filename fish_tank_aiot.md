@@ -51,9 +51,11 @@
 
 控制RGB燈光(紅、綠、藍光)，只開紅光及藍光，綠光永遠關閉；植物行光合作用只需要紅光及藍光，所以，只調整紅藍光的亮度。如圖所示，第一階段即調高亮度至 50% ，其餘兩階沒各再調高亮度 25%
 
+<div>
 <center class="half">
     <img src="./light/Sunset_RGB.png" alt="Sunset RGB" width="150"/><img src="./light/Evening_RGB.png" alt="Evening RGB" width="150"/><img src="./light/Night_RGB.png" alt="Night RGB" width="150"/>
 </center>
+</div>
 
 如下圖形是在Home Assistant中，36小時中紅藍光燈光調整的線條圖
 
@@ -76,9 +78,11 @@
 * [Gravity: Analog pH Sensor/Meter Kit V2](https://www.dfrobot.com/product-1782.html): 1組
 * [Gravity: Analog TDS Sensor/Meter for Arduino](https://www.dfrobot.com/product-1662.html): 1組
 
+<div>
 <center class="half">
     <img src="./sensor/sensor and fan control1.jpeg" alt="control1" width="200"/> <img src="./sensor/ESP8266 and Arduino.jpeg" alt="Esp8266 and Arduino" width="200"/> <img src="./sensor/L298n.jpeg" alt="L298n" width="200"/>
 </center>
+</div>
 
 * pH: pH 值在觀察後大約在 6.3~6.9 之間。在開燈後，因水草行光合做用吸收 CO2，讓 pH 由最低一路往上昇到燈亮度最高的時該；關燈後，由於 CO2 持續打，pH 值會從最高點持續降到開燈前的最低點(大約 6.3 左右)。
  
